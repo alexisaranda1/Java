@@ -99,6 +99,6 @@ public class Main {
 ## Recursos Adicionales
 - [Documentación oficial de Java](https://docs.oracle.com/en/java/)
 - [Curso de Java en W3Schools](https://www.w3schools.com/java/)
-- [Ejercicios en Java](https://www.hackerrank.com/domains/tutorials/10-days-of-java)
+
 
 
