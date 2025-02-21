@@ -124,39 +124,49 @@ public class Calculadora {
 }
 ```
 
-### ✅ Sobrescritura de métodos (Overriding)
+### ✅ Sobrescritura de métodos (Overriding) con Herencia
 ```java
 class Animal {
-    public void hacerSonido() {
-        System.out.println("El animal hace un sonido");
+    private String nombre;
+    private int edad;
+
+    public Animal(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    public void emitirSonido() {
+        System.out.println("El animal hace un sonido genérico");
     }
 }
 
 class Perro extends Animal {
+    public Perro(String nombre, int edad) {
+        super(nombre, edad);
+    }
+
     @Override
-    public void hacerSonido() {
+    public void emitirSonido() {
         System.out.println("El perro ladra");
     }
 }
-```
 
-### ✅ Interfaces
-```java
-interface Vehiculo {
-    void arrancar();
-}
+class Gato extends Animal {
+    public Gato(String nombre, int edad) {
+        super(nombre, edad);
+    }
 
-class Auto implements Vehiculo {
-    public void arrancar() {
-        System.out.println("El auto está en marcha");
+    @Override
+    public void emitirSonido() {
+        System.out.println("El gato maúlla");
     }
 }
 ```
 
 ### ✅ Polimorfismo
 ```java
-Animal miAnimal = new Perro();
-miAnimal.hacerSonido(); // Llama al método de la clase Perro
+Animal miAnimal = new Perro("Firulais", 5);
+miAnimal.emitirSonido(); // Llama al método de la clase Perro
 ```
 
 ### ✅ Clases abstractas
@@ -180,7 +190,6 @@ class Circulo extends Figura {
 ```
 
 ### ✅ Garbage Collector
-Java tiene un recolector de basura que elimina automáticamente los objetos que ya no están en uso.
 ```java
 public class Recolector {
     @Override
@@ -200,6 +209,10 @@ public class Recolector {
 4. Comparar dos números.
 5. Juego de adivinanza de número secreto.
 6. Menú interactivo de operaciones matemáticas.
+7. Implementar herencia con las clases `Animal`, `Perro` y `Gato`.
+8. Aplicar polimorfismo al sobrescribir métodos en las subclases.
+9. Uso de constructores en clases derivadas.
+10. Práctica de encapsulamiento con atributos privados y métodos públicos.
 
 ---
 
@@ -208,6 +221,8 @@ public class Recolector {
 - Implementar clases más complejas con relaciones entre objetos.
 - Profundizar en colecciones (`ArrayList`, `HashMap`).
 - Trabajar con excepciones y manejo de errores.
+- Profundizar en interfaces funcionales y expresiones lambda.
+- Aprender sobre flujos de datos (Streams) en Java.
 
 ---
 
