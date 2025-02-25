@@ -29,12 +29,6 @@ public  class Persona{
     public  String getSexo(){
         return sexo;
     }
-    public boolean mayoredad(Persona persona){
-        
-        if (persona.getEdad() >= 18)|{
-            return true;
-        }else
-            return false;
-        }
+
 
 }

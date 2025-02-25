@@ -20,12 +20,3 @@ class Gato implements Animal {
 }
 
 // Clase principal para probar la interfaz
-public class EjemploInterface {
-    public static void main(String[] args) {
-        Animal miPerro = new Perro(); // Crear un objeto de Perro
-        Animal miGato = new Gato();   // Crear un objeto de Gato
-
-        miPerro.hacerSonido(); // Llama al método implementado en Perro
-        miGato.hacerSonido();  // Llama al método implementado en Gato
-    }
-}
