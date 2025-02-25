@@ -1,5 +1,5 @@
 package Principal;
-import objetos.Persona;
+
 
 public class Main {
 
