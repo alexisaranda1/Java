@@ -117,9 +117,5 @@ public class EjemploLambda{
         System.out.println("¿Son iguales los nombres? : " + test1);
     }
 
-    // Función extra que no se está usando en el código principal
-    // Este método muestra un ejemplo de cómo puedes escribir una función tradicional.
-    public static String mensajeString(String mensajeString) {
-        return "hola";
-    }
+   
 }
