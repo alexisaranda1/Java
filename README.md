@@ -216,7 +216,36 @@ public class Recolector {
 
 ---
 
-## 🚀 **4. Próximos pasos**
+## 🌐 **4. Aplicación Web - AutoCatalog**
+
+### ✅ Servidor HTTP y Aplicación Web
+Se ha implementado una aplicación web completa para catálogo de automóviles que incluye:
+
+- **Servidor HTTP en Java**: Usando `com.sun.net.httpserver` para servir contenido web
+- **Logo personalizado**: Diseño SVG con paleta de colores azules cohesiva
+- **Catálogo interactivo**: Filtrado de automóviles por categorías
+- **Diseño responsivo**: Compatible con dispositivos móviles
+
+#### Ejecutar la aplicación web:
+```bash
+# Compilar
+javac src/web/AutoCatalogServer.java
+
+# Ejecutar servidor
+java -cp src web.AutoCatalogServer
+
+# Abrir en navegador: http://localhost:8080
+```
+
+#### Características técnicas:
+- ✅ Paleta de colores basada en logo (`#1A365D`, `#2C5282`, `#4299E1`)
+- ✅ Arquitectura modular (HTML, CSS, JavaScript)
+- ✅ Animaciones CSS y JavaScript
+- ✅ Servidor HTTP integrado en Java
+
+---
+
+## 🚀 **5. Próximos pasos**
 - Practicar el uso de arreglos (arrays).
 - Implementar clases más complejas con relaciones entre objetos.
 - Profundizar en colecciones (`ArrayList`, `HashMap`).
@@ -226,7 +255,7 @@ public class Recolector {
 
 ---
 
-## 💡 **5. Recursos útiles**
+## 💡 **6. Recursos útiles**
 - [Documentación oficial de Java](https://docs.oracle.com/en/java/)
 - [Java Programming Tutorials - W3Schools](https://www.w3schools.com/java/)
 - [Java Design Patterns](https://refactoring.guru/design-patterns/java)

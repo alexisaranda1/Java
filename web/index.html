@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCatalog - Catálogo de Autos</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="30" cy="30" r="28" fill="#2C5282" stroke="#1A365D" stroke-width="2"/>
+                    <path d="M15 25 L30 15 L45 25 L40 35 L20 35 Z" fill="#4299E1"/>
+                    <circle cx="22" cy="38" r="4" fill="#1A365D"/>
+                    <circle cx="38" cy="38" r="4" fill="#1A365D"/>
+                    <text x="30" y="28" text-anchor="middle" fill="white" font-family="Arial" font-size="8" font-weight="bold">AUTO</text>
+                </svg>
+                <h1>AutoCatalog</h1>
+            </div>
+            <nav class="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero" id="inicio">
+            <div class="container">
+                <h2>Encuentra el Auto de tus Sueños</h2>
+                <p>Explora nuestra amplia selección de vehículos de calidad</p>
+                <button class="cta-button" onclick="scrollToSection('catalogo')">Ver Catálogo</button>
+            </div>
+        </section>
+
+        <section class="catalog" id="catalogo">
+            <div class="container">
+                <h2>Nuestro Catálogo de Autos</h2>
+                <div class="filters">
+                    <button class="filter-btn active" onclick="filterCars('all')">Todos</button>
+                    <button class="filter-btn" onclick="filterCars('sedan')">Sedán</button>
+                    <button class="filter-btn" onclick="filterCars('suv')">SUV</button>
+                    <button class="filter-btn" onclick="filterCars('deportivo')">Deportivo</button>
+                </div>
+                <div class="cars-grid" id="cars-grid">
+                    <!-- Cars will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contacto">
+            <div class="container">
+                <h2>Contactanos</h2>
+                <p>¿Interesado en algún vehículo? Contáctanos para más información.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Teléfono</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p>info@autocatalog.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Dirección</h3>
+                        <p>123 Auto Street, Ciudad, País</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 AutoCatalog. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
